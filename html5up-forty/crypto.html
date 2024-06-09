@@ -9,7 +9,13 @@
     <meta name="description" content="Verschlüsselung mit Javascript" />
     <meta name="keywords" content="Verschlüsselung, Javascript, Crypto" />
 
-
+    <head>
+        <title>Elements - Mahmoud</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
 
     <title>Verschlüsselung mit Javascript</title>
 
@@ -76,7 +82,7 @@
 
 
             <!--/UdmComment-->
-            <div class="content">
+            <div class="content" class="alt">
 
                 <h1 class="dateHeadline">Verschlüsselung mit Javascript</h1>
 
@@ -94,16 +100,16 @@
                 <form id="cryptForm" onsubmit="return false;" action="javascript:return false;" style="text-align: center">
                     <p>
                         Zu verschlüsselnden Text eingeben:
-                        <br />
+                    <hr class="major" />
                         <textarea rows="8" cols="80" style="width: 90%" name="plaintext"></textarea>
-                        <br />
+                    <hr class="major" />
                         Passphrase zur Verschlüsselung:
-                        <br />
+                    <hr class="major" />
                         <input type="password" name="password" size="25" style="margin-bottom: 1em" />
-                        <br />
+                    <hr class="major" />
                         <input type="button" value="verschlüsseln" onclick="javascript:encrypt();return false;" style="margin-right: 2em" />
                         <input type="button" value="entschlüsseln" onclick="javascript:decrypt();return false;" style="margin-bottom: 1em" />
-                        <br />
+                    <hr class="major" />
                         verschlüsselter Text:<br />
                         <textarea rows="8" cols="80" style="width: 90%" name="ciphertext"></textarea>
                     </p>
